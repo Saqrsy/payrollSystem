@@ -1,15 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- مكتبة الاتصال بقاعدة بيانات PostgreSQL -->
-    <PackageReference Include="Npgsql" Version="8.0.3" />
+    <ProjectReference Include="..\PayrollEngine.Core\PayrollEngine.Core.csproj" />
   </ItemGroup>
 
 </Project>
